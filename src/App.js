@@ -1,33 +1,56 @@
-import React, { useState } from "react";
+
+//   const [result, setResult] = useState("hello");
+  
+
+//   function handleClick () {
+//     setResult("goodbye")
+//   }
+  
+//   // console.log(result);
+//   const billsArray = [
+//     "house bills",
+//     "netflix bills",
+//     "mama bills",
+//     "feeding bills",
+//     "",
+//     "",
+//   ];
+//   const billsElement = billsArray.map((bill) => <p key={bill}>{bill}</p>);
+
+//   // function addItem() {
+//   //   const newItem = `thing ${billsArray.length + 1}`;
+//   //   billsArray.push(newItem);
+//   //   // console.log(billsArray);
+//   // }
+
+//   return (
+//     <div className="">
+//       <button className="button"  onClick={handleClick}>
+//         {result}
+//       </button>
+//       {billsElement}
+//     </div>
+//   );
+// }
+
+// 
+ import React, { useState } from "react";
 import "./App.css";
 
-function App() {
-  const result = useState('hello');
-  console.log(result);
-  const billsArray = [
-    "house bills",
-    "netflix bills",
-    "mama bills",
-    "feeding bills",
-    "",
-    "",
-  ];
-  const billsElement = billsArray.map((bill) => <p key={bill}>{bill}</p>);
+ function App() {
 
-  function addItem() {
-    const newItem = `thing ${billsArray.length + 1}`;
-    billsArray.push(newItem);
-    // console.log(billsArray);
-  }
-
-  return (
-    <div className="">
-      <button className="button" onClick={addItem}>
-        add items
-      </button>
-      {billsElement}
-    </div>
-  );
+   /**
+     * Challenge: Set up state to track our count (initial value is 0)
+     */
+    return (
+      <div className="counter">
+          <button className="counter--minus">–</button>
+          <div className="counter--count">
+              <h1>0</h1>
+          </div>
+          <button className="counter--plus">+</button>
+      </div>
+  )
 }
 
 export default App;

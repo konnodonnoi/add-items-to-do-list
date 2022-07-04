@@ -42,13 +42,26 @@ import "./App.css";
    /**
      * Challenge: Set up state to track our count (initial value is 0)
      */
+
+   const [count, setCount ] = useState(0)
+
+   function add () {
+    setCount(count + 1)
+   };
+
+   function minus () {
+    setCount(count - 1)
+   }
+
+    
+
     return (
       <div className="counter">
-          <button className="counter--minus">–</button>
-          <div className="counter--count">
-              <h1>0</h1>
+          <button className="counter--minus" onClick={minus}>–</button>
+          <div className="counter--count" >
+              <h1>{count}</h1>
           </div>
-          <button className="counter--plus">+</button>
+          <button className="counter--plus" onClick={add}>+</button>
       </div>
   )
 }

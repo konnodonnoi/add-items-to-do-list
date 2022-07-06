@@ -58,7 +58,7 @@ import "./App.css";
       <div className="counter">
           <button className="counter--minus" onClick={minus}>–</button>
           <div className="counter--count" >
-              <h1>{count}</h1>
+              <h3>{count}</h3>
           </div>
           <button className="counter--plus" onClick={add} >+</button>
       </div>

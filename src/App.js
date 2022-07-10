@@ -1,4 +1,4 @@
-
+//added counter phase ii
  import React, { useState }from "react";
 import "./App.css";
 
@@ -17,11 +17,11 @@ import "./App.css";
 
     return (
       <div className="counter">
-          <button className="counter--minus" onClick={minus} >–</button>
+          <button className="counter--minus" onClick={minus}>–</button>
           <div className="counter--count" >
               <h3>{count}</h3>
           </div>
-          <button className="counter--plus" onClick={add} >+</button>
+          <button className="counter--plus" onClick={add}>+</button>
       </div>
   )
 }

@@ -6,15 +6,20 @@ import "./App.css";
 
   const [count, setCount] = useState(0)
 
+
+  //add section
   const add =  () =>  {
     setCount(prevCount => prevCount + 1)
 
   }
 
+
+  //subtract section
   const minus = () => {
     setCount(prevCount => prevCount - 1)
   }
 
+  //display section
     return (
       <div className="counter">
           <button className="counter--minus" onClick={minus}>–</button>

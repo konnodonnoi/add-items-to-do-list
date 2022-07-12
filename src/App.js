@@ -3,6 +3,7 @@
 import "./App.css";
 
  const App = ()  => {
+  //a technique to set a counter
 
   const [count, setCount] = useState(0)
 

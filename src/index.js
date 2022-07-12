@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 
 
+//indexing is a necessity
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
